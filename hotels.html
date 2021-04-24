@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/forms.js"></script>
+        <title>Meet Me in Japan</title>
+        <!-- icons downloaded from https://www.iconshock.com under guidelines for free personal projects-->
+    </head>
+
+<body>
+    <a class = "skip" href="#main_nav">Skip to Main Content</a>
+    <header id="main" class="flex-container">
+        <div class='logo'>
+        <a href="index.html"><img src="img/logo.png" alt="logo" id = "logo"></a>
+        </div>
+        <div class="head_nav">
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a id='selected' href="hotels.html">Hotels</a></li>
+            <li><a href="activity.html">Activities</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="main_msg">
+            <h1>Staying in Japan</h1>
+        </div>
+    </header>
+
+    <main>
+        <nav class="main_nav" aria-label='secondary' id ="main_nav">
+            <ul>
+                <li> <a href= #capsule><img src="img/iconshock_capsule.png" alt="capsule icon"> Capsule Hotel </a></li>
+                <li> <a href= #inn><img src="img/iconshock_traditional_inn.png" alt="traditional inn icon"> Traditional Inn </a></li>
+                <li> <a href= #hotel><img src="img/iconshock_hotel.png" alt="Hotel icon"> Hotel </a></li>
+                <li> <a href= #lux_hot><img src="img/iconshock_luxury_hotel.png" alt="Grand Hotel icon"> Luxury Hotel </a></li>
+            </ul>
+        </nav>
+        <article class="main_articles">
+            <section class="Capsule-hotel" id = "main_content">
+                <h2>Capsule Hotel (カプセルホテル)</h2>
+                <div class="hotel-zen" id="capsule">
+                <h3>Hotel Zen Tokyo (30 - $40 USD /night)</h3>
+                <figure>
+                    <img src="img/hotel_zen.jpg" alt="hotel zen tokyo">
+                    <figcaption>Private bedrooms at Hotel Zen</figcaption>
+                </figure>
+                <p> Capsule hotels are a great choice for an economic, and comfortable stay!</p><br>
+
+                <p> While traveling across multiple regions of Japan, capsule hotels could provide one with the much needed hospitality to just stay the night.
+                    Hotel Zen and many other hotels alike provide guests with lockers to store their personal items, bath amenities to allow guests to freshen up,
+                    as well as a single bed tightly enclosed by a room (capsule) for guests to sleep in.</p> <br>
+
+                <p> Capsule hotels could be found everywhere in the cities, and travelers could fall back to it when the need for a temporary stay arises. For example, it might be a good idea to stay at a capsule hotel in between flights/transit in Japan. </p>
+                </div>
+            </section>
+            <section class="Ryokan">
+                <h2>Traditional Inn / Ryokan (旅館)</h2>
+                <div class="ryokan" id='inn'>
+                <h3>Various (40 - $150 USD /night)</h3>
+                <figure>
+                    <img src="img/ryokan.jpg" alt="Outside view of a Ryokan">
+                    <figcaption>Ryokan during night time</figcaption>
+                </figure>
+                <p> <strong>Traditional Inns allow guests to experience the full Japanese lifestyle and hospitalities. </strong></p> <br>
+
+                <p> Staying in Ryokans had been the traditional way for visitors to find a place to sleep. The first of such inns was established in 705 A.D.</p> <br>
+
+                <p> Ryokans often provide traditional Japanese cuisine to their patrons. In addition, guests are housed in rooms with tatami flooring, and are given traditional Japanese clothing (yukata) during their stay.</p> <br>
+
+                <p>The costs for staying at Ryokans nowadays varies greatly due to its scarcity in metropolitan areas. You are more likely to find affordable ones in rural areas in Kyoto.</p>
+                </div>
+            </section>
+            <section class="Modern-inn" id="hotel">
+                <h2>Modern Inn (Hotels)</h2>
+                <div class="palace">
+                <h3>Hotel Palace Japan (~$40 USD/night)</h3>
+                <figure>
+                    <img src="img/palace_japan.jpg" alt="palace japan">
+                    <figcaption>Street view of Palace Japan</figcaption>
+                </figure>
+                <p> <strong>Hotel Palace Japan is a fantastic choice for an
+                    affordable and economic living experience </strong>
+                    while touring Tokyo. </p> <br>
+
+                <p> Located within 5 minutes of walking distance from the Minowa subway
+                    station, Palace Japan allows visitors of Japan
+                    the opportunity to stay connected with the most well known parts
+                    of Japan's capital without having to break the bank. </p> <br>
+
+                <p> With that said, the amenities are modern and generally fantastic! 
+                    The rooms, while small, are cleaned daily and comes with a functional TV set. 
+                    Shower and bathroom facilities are shared with the entire floor, but the
+                    fact that they provide coin laundry services on the first floor is 
+                    definitely a pleasant surprise. On top of that, the staff is extremely
+                    friendly, and they speak a decent amount of English!
+                </p>
+                </div>
+            </section>
+            <section class="Luxury-hotel">
+                <h2>Luxury Hotel</h2>
+                <div class="lux" id="lux_hot">
+                <h3>Imperial Hotel Tokyo (~$230 USD/night)</h3>
+                <figure>
+                    <img src="img/imperial.jpg" alt="ice cream crepes">
+                    <figcaption>View of the grand Imperial Hotel of Tokyo</figcaption>
+                </figure>
+                <p> <strong> High-end hotels like the Imperial Hotel of Tokyo are landmarks to the city.</strong> </p> <br>
+
+                   <p> While it may be very costly, staying at such hotels would allow one to fully explore the very best of Japan's hotel industry.
+                    </p>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div id='attribution'>
+        <p>Icons downloaded per <ins cite="https://www.iconshock.com">https://www.iconshock.com</ins>'s free tier personal license.</p>
+        <p>Google's Material-icons per <ins cite="https://fonts.google.com/icons?selected=Material+Icons">Material-icons</ins>'s open source Apache 2.0 license.</p>
+        </div>
+        <p>University of Michigan School of Information<br/>
+          &copy; 2021 Allen Mo SI 539 Web Design</p>
+    </footer>
+
+</body>
+</html>

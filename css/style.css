@@ -1,0 +1,419 @@
+body{
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 0;
+    font-size: 16px;
+    line-height: 2.0;
+}
+
+h1{
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    color:#fff;
+    background-color: #333;
+    font-style: oblique;
+    font-weight: 500;
+  }
+
+h2{
+    font-size: 26px;
+    color: #333;
+  }
+
+h3{
+    font-size: 20px;
+    color:#be0029;
+}
+
+section p{
+    font-family: 'Roboto', sans-serif;
+    text-align: start;
+    line-height: 1.75;
+    color: #333;
+}
+
+main img{
+    max-width: 350px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+figcaption{
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    font-size: smaller;
+    margin-bottom: 20px;
+}
+
+header{
+    display: block;
+    height: 500px;
+    position:relative;
+}
+
+header::after{ /*Setting the background image to transparent*/
+    content: "";
+    background-image: url("../img/japan_parallex.jpg");
+    background-size: auto;
+    background-repeat:no-repeat;
+    background-position: center;
+    opacity: 0.85;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    position: absolute;
+    z-index: -1;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+
+header>.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+#logo{
+    align-self: center;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.head_nav, .main_msg{
+    width: 20em;
+}
+
+nav {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: center;
+}
+
+nav ul{
+    display: inline-flex;
+    width:100%;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+ul li a{
+    display:block;
+    text-decoration: none;
+    font-weight:900;
+    color:#333;
+    padding: 7px 14px;
+    background-color: #fefefe;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    border:#333 2px;
+}
+
+.skip{
+    background: white;
+    left: 0;
+    padding: 7px;
+    -webkit-transition: top 1.5s ease-out;
+    transition: top 1.5s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -50px;
+  }
+
+.skip:focus{
+    top: 25px;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 19px 5px auto 5px 19px;
+    row-gap: 2em;
+    background-color: #f5f5f5;
+}
+
+article:first-child{
+    margin-top: 20px;
+}
+
+article section{
+    grid-column: 2 / 5;
+}
+
+section {
+    display:grid;
+    grid-template-columns: 5px auto 5px;
+    row-gap: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+}
+
+section>*{
+    grid-column: 2 / span 1;
+}
+
+.covid{
+    background-color: #be0029;
+    color:white;
+    grid-column: 1 / -1;
+    align-content: center;
+    grid-template-columns: 20px auto 20px;
+    border:none;
+    border-radius: 0px;
+}
+
+.covid >*{
+    color:white;
+    grid-column: 2 / span 1;
+}
+
+strong{
+    color: #be0029;
+}
+
+footer{
+    background-color: #be0029;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#attribution{
+    font-size: smaller;
+    font-style: italic;
+}
+
+ul li a#selected {
+    text-decoration: underline;
+    background-color: #333;
+    color:#fff;
+    font-weight: 900;
+}
+
+section:last-child{
+    margin-bottom: 1em;
+}
+
+.main_nav{
+    display:block;
+    color:#333;
+    text-align: center;
+    border-bottom: none;
+    margin: 0;
+    padding-bottom: 1em;
+    background-color: #f5f5f5;
+}
+
+.main_nav a{
+    font-size: 100%;
+    border:none;
+    padding: 3px 6px;
+}
+
+.main_nav a:hover, .main_nav a:focus{
+border: 2px solid #333;
+}
+
+.main_nav img{
+    height: 3em;
+}
+
+
+@media only screen and (min-width : 768px) {
+
+.head_nav{
+    width:100%;
+}
+
+nav{
+    border:none;
+    margin: 0 2em;
+}
+
+nav ul{
+    display: inline-flex;
+    width:100%;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+}
+
+nav a{
+    font-size: 200%;
+    border:#333 2px solid;
+}
+
+.main_nav ul{
+    justify-content: center;
+}
+
+.main_nav a{
+    font-size: 120%;
+    padding: 7px 14px;
+}
+
+@-webkit-keyframes fadeIn{
+    from {
+      opacity: 0;
+      }
+    to {
+      opacity: 1;
+      }
+  }
+
+@keyframes fadeIn{
+    from {
+      opacity: 0;
+      }
+    to {
+      opacity: 1;
+      }
+}
+
+h1 {
+    font-size: 45px;
+   -webkit-animation-name: fadeIn;
+   -webkit-animation-duration: 3s;
+    animation-name:fadeIn;
+    animation-duration: 3s;
+    margin-top:2.0em;
+}
+
+.cards{
+    display:inline-grid;
+    grid-template-columns: 2px auto 2px 10px 2px auto 2px;
+    grid-template-rows: auto;
+}
+
+.cards .jr_pass{
+    border: 1px solid #f5f5f5;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    grid-column: 2 / 3;
+}
+
+.cards .subway{
+    grid-column: 6 / 7;
+    border: 1px solid #f5f5f5;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.jr_pass >*, .subway >*{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+h3{
+    text-align: center;
+}
+
+.main_articles{
+    display: grid;
+    grid-template-columns: 19px 5px 2px auto 2px 10px 2px auto 2px 5px 19px;
+    grid-template-rows: auto;
+}
+
+section.Ramen, section.Capsule-hotel, section.Shopping{
+    border: 1px solid #f5f5f5;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    grid-column: 2 / 5;
+    align-content: flex-start;
+}
+
+section.Sushi, section.Ryokan, section.Festivals{
+    border: 1px solid #f5f5f5;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    grid-column: 8 / 11;
+    align-content: flex-start;
+}
+
+section.Comfort-food, section.Modern-inn, section.Gaming{
+    border: 1px solid #f5f5f5;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    grid-column: 2 / 5;
+    align-content: flex-start;
+}
+
+section.Sweets, section.Luxury-hotel, section.Sights{
+    border: 1px solid #f5f5f5;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    grid-column: 8 / 11;
+    align-content: flex-start;
+}
+
+div.sushiro >*, div.ichiran>*, div.saize>*, div.crepe>*, div.hotel-zen>*,
+div.ryokan>*, div.palace>*,div.lux>*, div.yodobashi >*, div.summer-festival>*, div.vrzone>*,
+div.japan-sights>*{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+section:last-child{
+    margin-bottom: 0;
+}
+
+}
+
+/* Desktops */
+@media only screen and (min-width : 1000px) {
+
+header::after{
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1280px;
+}
+
+header{
+    height: 600px;
+}
+
+.main_nav ul{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display:flex;
+    justify-content: space-around;
+    align-content: stretch;
+}
+
+main > nav{
+    flex-basis: 25%;
+    flex-shrink: 1;
+}
+
+section{
+    margin-top: 1em;
+}
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+
+    .skip a{
+      -webkit-transition: none;
+      transition: none;
+     }
+
+    header::after{
+      background-attachment: initial;
+    }
+  }
